@@ -1,0 +1,117 @@
+<html>
+<body>
+<center><h1 style=font-size:85px;background-color:powderblue;>HOTEL SURYA</h1>
+<a style="color:red;margin:20;font-size:30px;padding-right:10px;"href="home.php">Home</a>
+<a style="color:red;margin:20;font-size:30px;padding-right:20px;"href="about.htm">About</a>
+<a style="color:red;margin:20;font-size:30px;padding-right:20px;"href="rooms.htm">Rooms</a>
+<a style="color:red;margin:20;font-size:30px;padding-right:20px;"href="services.htm">Food Menu</a>
+<a href="login.php"><button style="btn;margin-left:230;padding:13px;background-color:orange;font-size:20px;">Login</button></a>
+<head>
+<Section class="img-slider">
+ 
+ <div class="slider-container">
+        
+  
+  <div class="slide">    
+ <img src="rt1.jpg">
+   
+<div class="text-block">
+<h1 style=position:absolute;top:90;bottom:50;left:100;font-size:90px;>The Perfect<br />Base For You</h1></div>
+ </div>
+    
+    
+<div class="slide">
+     
+ <img src="a2.jpg">
+    
+</div>
+
+    
+<div class="slide">
+ 
+<img src="pool.jpeg">
+</div>
+    
+  
+</div>
+
+</Section>
+<style>
+* {
+  
+margin: 0;
+  
+padding:0;
+box-sizing: border-box;
+
+}
+
+
+.img-slider 
+{
+    
+position: relative;
+    
+width: 100vw;
+    
+height: 400px;
+
+}
+
+.img-slider .slider-container 
+{
+    
+position: absolute;
+   
+ width: 300%;
+    
+top: 0;
+   
+ left: 0;
+    
+overflow: hidden;
+   
+ animation: slider 5s infinite;
+
+}
+
+.img-slider .slider-container .slide 
+{
+    
+position: relative;
+    
+width: 33.33333333%;
+    
+height: 100%;
+    
+float: left;
+   
+ overflow: hidden
+
+}
+
+.img-slider .slider-container .slide img 
+{
+  
+display: block;
+  
+width: 100%;
+ 
+ height: 100%
+
+}
+
+@keyframes slider 
+{
+    0%, 25%, 100%{left: 0
+}
+    
+    
+30%, 55%{left: -100%}
+    
+    
+60%, 85%{left: -200%}
+}
+</style>
+</body>
+</html>
