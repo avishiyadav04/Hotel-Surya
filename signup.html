@@ -1,0 +1,130 @@
+<?php
+include " ";
+if(isset($_POST['login']))
+{
+$username=$_POST('Username'];
+$password=$_POST('Password'];
+$sql="Select * from users WHERE username='$username' ";
+$result=mysqli_query($conn,$sql);
+if(mysqli_num_rows($result)==1)
+{
+$row=
+
+
+
+
+
+
+
+
+<html>
+    
+    <style>
+        body {
+           font-family: 'Arial', sans-serif;
+            background:#FF7256;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .input-group {
+            margin-bottom: 20px;
+            position: relative;
+        }
+        input {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+        }
+        input:focus {
+            border-color: #667eea;
+            outline: none;
+        }
+        .input-group label {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            color: #999;
+            pointer-events: none;
+            transition: all 0.3s;
+        }
+        input:focus + label,
+        input:not(:placeholder-shown) + label {
+            top: -10px;
+            left: 10px;
+            font-size: 12px;
+            color: #667eea;
+            background: white;
+            padding: 0 5px;
+        }
+        button {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        button:hover {
+            transform: translateY(-2px);
+        }
+.signup {
+font-size:17px;
+text-align:center;
+}
+.signup label{ 
+color: #009579;
+cursor: pointer;
+}      
+ </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Signup</h2>
+        <form method="POST" id="loginForm">
+            <div class="input-group">
+                <input type="text"  placeholder="email"  required>
+              
+            </div>
+     <div class="input-group">
+                <input type="password" placeholder="password"  required>
+</div>
+     <div class="input-group">
+  <input type="password" placeholder="confirm password"  required>
+
+           
+           
+            </div>
+            <button type="submit">Signup</button>
+   </form>
+<div class ="signup">
+<span class="signup">Already have an account?</span>
+<a href="login.html"><label for=" ">Login</label>
+    </div>
+
+   
+</body>
+</html>
+
